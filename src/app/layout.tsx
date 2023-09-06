@@ -1,4 +1,5 @@
 import GithubCorner from "@/components/github-corner/GithubCorner";
+import { Analytics } from "@vercel/analytics/react";
 import Link from "next/link";
 import ClientLayout from "./ClientLayout";
 import "./global.css";
@@ -25,6 +26,7 @@ export default function Layout(props: {
         </header>
         <GithubCorner />
         <ClientLayout {...props} />
+        <Analytics />
       </body>
     </html>
   );
