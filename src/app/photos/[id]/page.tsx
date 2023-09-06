@@ -1,8 +1,12 @@
-import Frame from '../../../components/frame/Frame'
-import swagPhotos, { Photo } from '../../../photos'
+import Frame from "@/components/frame/Frame";
+import swagPhotos, { Photo } from "@/photos";
 
-export default function PhotoPage({ params: { id } }: { params: { id: string } }) {
-  const photo: Photo = swagPhotos.find((p) => p.id === id)!
+export default function PhotoPage({
+  params: { id },
+}: {
+  params: { id: string };
+}) {
+  const photo: Photo = swagPhotos.find((p) => p.id === id)!;
 
   return (
     <div className="container mx-auto my-10">
@@ -10,5 +14,5 @@ export default function PhotoPage({ params: { id } }: { params: { id: string } }
         <Frame photo={photo} />
       </div>
     </div>
-  )
+  );
 }
