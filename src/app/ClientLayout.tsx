@@ -31,7 +31,6 @@ export default function ClientLayout(props: {
   const [modalShown, setModalShown] = useState(false);
 
   useEffect(() => {
-    console.log(segments);
     const isShown = segments.join("") !== "__DEFAULT__";
     document.body.classList.toggle("overflow-hidden", isShown);
     setModalShown(isShown);
