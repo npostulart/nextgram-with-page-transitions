@@ -17,7 +17,7 @@ To everyone discussing about the issue and providing useful solutions and hints,
 
 https://nextgram-with-page-transitions.vercel.app
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextgram)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnpostulart%2Fnextgram-with-page-transitions)
 
 ## Locally
 
