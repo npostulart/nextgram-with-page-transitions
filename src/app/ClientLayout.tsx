@@ -7,11 +7,15 @@ import {
   useSelectedLayoutSegment,
   useSelectedLayoutSegments,
 } from "next/navigation";
-import { useEffect, useState } from "react";
+import { ElementRef, forwardRef, useEffect, useState } from "react";
 
-function Child(props: { children: React.ReactNode }) {
+const Child = forwardRef<
+  ElementRef<typeof motion.div>,
+  { children: React.ReactNode }
+>((props, ref) => {
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 100 }}
@@ -19,7 +23,9 @@ function Child(props: { children: React.ReactNode }) {
       <FrozenRouter>{props.children}</FrozenRouter>
     </motion.div>
   );
-}
+});
+
+Child.displayName = "Child";
 
 export default function ClientLayout(props: {
   children: React.ReactNode;
@@ -38,7 +44,7 @@ export default function ClientLayout(props: {
 
   return (
     <>
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="popLayout" initial={false}>
         <Child key={segment}>{props.children}</Child>
       </AnimatePresence>
       <AnimatePresence>
