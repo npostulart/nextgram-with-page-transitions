@@ -5,14 +5,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && tsc --noEmit"
+    "lint": "next lint && tsc --noEmit",
+    "format": "prettier -w ./src"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@vercel/analytics": "^1.0.2",
     "clsx": "^1.2.1",
     "framer-motion": "^10.16.4",
-    "next": "13.4.19",
+    "next": "13.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -21,10 +22,9 @@
     "@types/react": "^18.2.14",
     "autoprefixer": "^10.4.14",
     "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
+    "eslint-config-next": "13.5.1",
     "postcss": "^8.4.24",
     "prettier": "^3.0.3",
-    "sass": "^1.63.6",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.1.3"
   }

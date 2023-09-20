@@ -4,9 +4,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['pbs.twimg.com'],
-  },
-  experimental: {
-    appDir: true,
+    domains: ["pbs.twimg.com"],
   },
 };

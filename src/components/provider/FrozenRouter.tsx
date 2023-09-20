@@ -1,4 +1,4 @@
-import { LayoutRouterContext } from "next/dist/shared/lib/app-router-context";
+import { LayoutRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useContext, useRef } from "react";
 
 export default function FrozenRouter(props: { children: React.ReactNode }) {
